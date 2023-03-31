@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ValIt | Validate</title>
+    <link rel="shortcut icon" href="../../images/ethrnd.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/create.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"
+      integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="../js/abi.js"
+    ></script>
+    <script src="../js/start.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar-menu">
+      <!-- Menu normal -->
+      <ul class="menu">
+        <li class="title">
+          <a href="index.html" class="val">
+            <i class="fa fa-graduation-cap fa-2xs"></i>
+            VALIDATE.IT</a
+          >
+        </li>
+        <div class="left">
+          <li><a href="create.html">CREATE</a></li>
+          <li><a href="verify.html">VALIDATE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="roles">
+        <div>
+          <h2>Validate Diploma</h2>
+          <p>
+            Companies need to ensure that certificates presented by job
+            candidates are correct and valid as they are a crucial factor in
+            determining the candidate's qualifications and suitability for the
+            role. Certificates provide evidence of the candidate's education,
+            training, and professional qualifications, which are essential for
+            any job. Hiring an employee with false or misleading certificates
+            can result in serious consequences for the company, such as legal
+            liabilities, damage to reputation, and loss of business. ValidateIt
+            provides companies with a portal to validate the Education details
+            provided by any applicant by using Blockchain technology to ensure
+            authenticity and ZERO tampering of data provided, thereby helping
+            them make the correct decisions.
+            <br /><br />
+            Owner of the Contract is: <span id="ownerID"></span>
+          </p>
+        </div>
+        <img
+          src="../../images/verify.png"
+          height="300vh"
+          style="
+            margin-left: 2rem;
+            margin-right: 0;
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+          "
+          alt=""
+        />
+      </div>
+    </header>
+
+    <section>
+      <br />
+      <h3 class="text">VALIDATE</h3>
+      <div class="stdtxt">
+        Enter student details below to check if Certificate details provided are
+        valid. <br />
+        You are signed in as: <span id="user"></span>
+      </div>
+
+      <form class="form" role="form" id="form-diploma">
+        <div class="flex">
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="colName"
+              name="colName"
+            />
+            <span>College Name</span>
+          </label>
+
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="sname"
+              name="sname"
+            />
+            <span>Student Name</span>
+          </label>
+        </div>
+
+        <div class="flex">
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="degree"
+              name="degree"
+            />
+            <span>Degree Awarded</span>
+          </label>
+
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="day"
+              name="day"
+            />
+            <span>Day of awarding</span>
+          </label>
+        </div>
+
+        <div class="flex">
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="month"
+              name="month"
+            />
+            <span>Month of awarding</span>
+          </label>
+
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="year"
+              name="year"
+            />
+            <span>Year of awarding</span>
+          </label>
+        </div>
+
+        <div class="flex-cent">
+          <a class="createbtn" href="#" onclick="verifyDiploma()"> Validate </a>
+          <!-- <button class="createbtn">Send</button> -->
+        </div>
+      </form>
+    </section>
+
+    <script src="../js/certificate.js"></script>
+  </body>
+</html>

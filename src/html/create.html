@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ValIt | Create</title>
+    <link rel="shortcut icon" href="../../images/ethrnd.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/create.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"
+      integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="../js/abi.js"
+    ></script>
+    <script src="../js/start.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar-menu">
+      <!-- Menu normal -->
+      <ul class="menu">
+        <li class="title">
+          <a href="index.html" class="val">
+            <i class="fa fa-graduation-cap fa-2xs"></i>
+            VALIDATE.IT</a
+          >
+        </li>
+        <div class="left">
+          <li><a href="create.html">CREATE</a></li>
+          <li><a href="verify.html">VALIDATE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="roles">
+        <div>
+          <h2>Create Diploma</h2>
+          <p>
+            As a University, creating authenticate Certificates and presenting
+            them to students is crucial. ValidateIt allows Universities to enter
+            Student details and uses a Smart Contract deployed using Truffle to
+            Create Certificates. When an authorized user clicks on "Create
+            Certificate", the Smart Contract concatenates all given values and
+            generates a hash. This hash is mapped to a boolean value True and
+            added to Online Blockchain. This record is now ready to be Verified
+            by anyone at any time.
+            <br /><br />
+            Owner of the Contract is: <span id="ownerID"></span>
+          </p>
+        </div>
+        <img src="../../images/dipl.png" height="235vh" alt="" />
+      </div>
+    </header>
+
+    <section>
+      <br />
+      <h3 class="text">CREATE</h3>
+      <div class="stdtxt">
+        Enter student details below to create a Certificate. Click "SEND" to
+        email student with Certificate details. <br />
+        You are signed in as: <span id="user"></span>
+      </div>
+
+      <form
+        class="form"
+        role="form"
+        id="form-diploma"
+        action="https://getform.io/f/b905e9e8-57bb-4c4e-960e-46cf4fd7c43e"
+        method="POST"
+      >
+        <div class="flex">
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="colName"
+              name="colName"
+            />
+            <span>College Name</span>
+          </label>
+
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="sname"
+              name="sname"
+            />
+            <span>Student Name</span>
+          </label>
+        </div>
+
+        <div class="flex">
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="degree"
+              name="degree"
+            />
+            <span>Degree Awarded</span>
+          </label>
+
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="day"
+              name="day"
+            />
+            <span>Day of awarding</span>
+          </label>
+        </div>
+
+        <div class="flex">
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="month"
+              name="month"
+            />
+            <span>Month of awarding</span>
+          </label>
+
+          <label>
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              id="year"
+              name="year"
+            />
+            <span>Year of awarding</span>
+          </label>
+        </div>
+
+        <label style="align-self: center">
+          <input
+            required=""
+            placeholder=""
+            type="text"
+            class="input"
+            id="email"
+            name="email"
+          />
+          <span>Email address of Student</span>
+        </label>
+
+        <div class="flex-cent">
+          <a class="createbtn" href="#" onclick="createDiploma()"> Create </a>
+          <button class="createbtn">Send</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="../js/certificate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #121212;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #313131;
+}
+
+/* ****************************************************
+                          CONTENEDOR
+  ******************************************************/
+.container {
+  background: url("https://subtlepatterns.com/patterns/ricepaper.png");
+  min-height: 100%;
+  overflow: auto;
+  width: 80%;
+}
+
+/* ENLACES */
+li a {
+  /* color: #fff; */
+  color: #121212;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.left a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7f56dd;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.left a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.val {
+  font-size: 1.2rem;
+  padding-left: 0;
+  font-weight: 530;
+}
+
+/* **************************************************
+          BARRA DE NAVEGACION Y MENU NORMAL
+  ****************************************************/
+/* Barra de navegacion (contiene al nav mini menu) */
+.navbar-menu {
+  box-shadow: #313131;
+  padding: 0.5rem auto;
+  width: calc(100%);
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 80%;
+}
+
+/* Menu */
+.navbar-menu .menu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* List items*/
+.navbar-menu .menu li {
+  display: inline-block;
+}
+
+.left li {
+  border-bottom: #1c1c1c solid 1px;
+  padding-top: 0.2rem;
+}
+
+.title {
+  padding-top: 0.2rem;
+}
+
+.roles {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card {
+  width: 200px;
+  height: 274px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  border: solid #b5b5b5 1px;
+}
+
+.card-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 72%;
+  border-radius: 6px 6px 0 0;
+}
+
+.im1 {
+  background-image: url(../../images/teachers1.png);
+}
+
+.im2 {
+  background-image: url(../../images/student.png);
+}
+
+.im3 {
+  background-image: url(../../images/comp.png);
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #4b1fb1;
+  padding: 10px 7px 0;
+  text-align: center;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  padding: 7px;
+  text-align: center;
+  color: rgb(88, 87, 87);
+}
+
+.heading a {
+  color: rgb(88, 87, 87);
+  text-decoration: none;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+header {
+  padding: 1rem 3rem 0 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0rem 3rem 0 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.roles p {
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+  height: 40px;
+  font-size: 0.5rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg, #1c1c1c, #6220fb);
+  border: 0 solid;
+  overflow: hidden;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
